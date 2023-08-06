@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://img.freepik.com/vector-gratis/fondo-tecnologia-digital-alambre-malla-red_1017-27428.jpg?w=1380&t=st=1689058147~exp=1689058747~hmac=2d5f3df43b6038eb2b7cf47b82c68e31697520d58c1653e99873b40f168a95c0");
+  background-size: cover;
+  color: white;
+  font-family: 'Unbounded', cursive;
+  margin: 0 auto;
+  display: block;
+  max-width: 2000px;
+}
+
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container {
+ background-color: rgba(0, 0, 0, 0.8);
+ width: 35vw;
+ margin: 40px auto;
+ padding: 2rem;
+ border-radius: 0.50rem;
+ font-size: 1.2rem;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin: 0 1rem;
+  text-shadow: 1px 1px 4px;
+  font-size: 40px
+}
+
+.description {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 1rem;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-div {
+margin: 5px 0;
+}
+
+.form-div1 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input-textarea {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  font-size: 1.2rem;
+  padding: 8px;
+  opacity: 0.9;
+  border-style: none;
+  border-radius: 5px;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 20px 0;
+  display: block; 
+  width: 100%;
+  min-height: 60px;  
+}
+
+.container-submit {
+    text-align: center;
+}
+
+.submit {
+  width: 100%;
+  height: 3rem;
+  background-color: #37af65;;
+  margin-top: 25px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: #e8e8e8;
+}
+
+.input-text, select {
+  display: block;
+  width: 100%;
+  padding: 8px 0.7rem;
+  margin-top: 8px; 
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  opacity: 0.8;
+}
+
+p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.input-radio {
+  display: inline-block;
+  min-width: 1.2rem;
+  min-height: 1.2rem;
+}
+
+hr {
+  margin: 20px 0 30px 0;
+  padding: 4px;
+  border-style: none;
+  opacity: 0.1;
+  background-color: white;
+}
+
+.radio-separador {
+  display: inline-block;
+  padding: 10px 5rem;
+  margin: 0 auto;
+}
+
+.checkbox {
+  display: inline-block;
+  padding: 10px auto;
+  margin: 15px 10px;
+  min-width: 1.2rem;
+  min-height: 1.2rem;
+}

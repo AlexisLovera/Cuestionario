@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Encuesta</title>
+    <meta charset:"UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="title" id="title">Formulario de ingreso</h1>
+    </header>
+    <main>
+      <form id="survey-form">
+        <!--Rellenar-->
+        <div class="container"> 
+          <p class="description" id="description">Por favor rellena correctamente el formulario</p> 
+          <div class="form-div">
+            <label id="name-label">Nombre
+              <input class="input-text" id="name" type="text" placeholder="Ingrese su nombre aquí"required />
+            </label><br>
+          </div>
+          
+          <div class="form-div">
+            <label id="email-label">Email
+              <input class="input-text" id="email" type="email" placeholder="Ingrese su email aquí"required />
+            </label><br>
+          </div>
+
+          <div class="form-div">
+            <label id="number-label">Edad 
+              <input class="input-text" id="number" type="number" min="18" max="120" placeholder="Edad" required/>
+            </label><br>
+          </div>
+
+          <!--Desplegable-->
+          <div class="form-div">
+            <label for="dropdown">¿Cual es su nivel academico?
+              <select id="dropdown"> 
+                <option value="nivel-academico">(Incompletos)</option>
+                <option value="primario">Nivel primario completo</option>
+                <option value="secundario">Nivel secundario completo</option>
+                <option value="terciario">Nivel terciario completo</option>
+              </select>
+            </label><br>
+          </div>
+          
+          <hr>
+          <!--Radio-->
+
+    <p>¿Que area de desarrollo es de su preferencia?</p>
+          <div class="form-div1">
+            <label name="html">
+              <div class="radio-separador">  
+                <input class="input-radio" id="html" name="area-laboral" type="radio" value="html" checked>.html    
+              </div>
+            </label>
+
+            <label name="css">  
+              <div class="radio-separador">
+                <input class="input-radio" id="css" name="area-laboral" type="radio" value="css">.css
+              </div>  
+            </label><br>
+          </div>
+
+          <div class="form-div">  
+            <label for="comentario">
+              <textarea class="input-textarea" id="comentario" type="textarea" placeholder="Comente acerca de su elección (opcional)"></textarea>
+            </label><br>  
+          </div>
+
+          <!--Checkbox-->
+
+          <p>Areas de interes (marque según corresponda)</p>
+          <div class="form-div">
+            <div>  
+              <label>
+                <input class="checkbox" value="front-end" type="checkbox">Proyectos front-end<br>
+              </label>
+            </div>
+            <div>  
+              <label>  
+                <input class="checkbox" value="back-end" type="checkbox">Proyectos back-end<br>
+              </label>
+            </div>
+            <div>  
+              <label>  
+                <input class="checkbox" value="datos" type="checkbox">Visualización de datos<br>
+              </label>
+            </div>    
+                <textarea class="input-textarea" placeholder="Agregue algún comentario (opcional)"></textarea>
+              </label>
+          </div>
+          <div class="container-submit">
+            <input class="submit" id="submit" type="submit">
+          </div>     
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
